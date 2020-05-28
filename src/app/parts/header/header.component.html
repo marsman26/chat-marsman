@@ -1,0 +1,21 @@
+<ul [style.background]="background ? 'black' : 'white'">
+	<li class="logo" *ngIf="background">
+		<a [style.color]="background ? 'white' : 'black'" routerLink="/">Chat</a>
+	</li>
+	<li class="username" *ngIf="!background">
+		<a routerLink="/u/:nickname" [style.color]="background ? 'white' : 'black'">/username</a>
+	</li>
+	<li>
+		<ul *ngIf="background" [style.color]="background ? 'black' : 'white'">
+			<li>
+				<a routerLink="/login">Login</a>
+			</li>
+			<li>
+				<a routerLink="/signup">Sign up</a>
+			</li>
+		</ul>
+		<ul *ngIf="!background" [style.color]="background ? 'black' : 'white'">
+			<li><a routerLink="/c/:nickname">Contacts</a></li>
+		</ul>
+	</li>
+</ul>

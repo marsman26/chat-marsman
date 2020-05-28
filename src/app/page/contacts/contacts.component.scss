@@ -1,0 +1,88 @@
+.m-contacts {
+  height: calc(100vh-50px);
+
+  h2 {
+    margin-top: 30px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  button {
+    background: black;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2em;
+    border: 0;
+    width: 200px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+}
+
+.main-c {
+  display: flex;
+
+  .contacts-card-c {
+    margin: 40px auto;
+
+    .contacts-card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: auto auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+
+      input {
+        height: 30px;
+        margin-bottom: 20px;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 1.2em;
+      }
+
+      input:focus {
+        outline: 1px solid black;
+      }
+
+      .contacts-list {
+        max-height: 300px;
+
+        .contact {
+          width: 100%;
+          display: flex;
+          text-decoration: none;
+          color: #000;
+          align-items: center;
+          padding: 5px 0;
+          cursor: pointer;
+
+          .user {
+            margin-left: 20px;
+          }
+
+          .user-name {
+            font-size: 1.2em;
+            font-weight: 700;
+          }
+
+          .user-status {
+            text-decoration: underline;
+          }
+
+          img {
+            width: 50px;
+            height: 50px;
+            // border-radius: 50%;
+          }
+        }
+
+        .contact:hover {
+          background: rgb(255, 255, 255);
+          background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 52%, rgba(255, 255, 255, 1) 100%);
+        }
+      }
+    }
+  }
+}
